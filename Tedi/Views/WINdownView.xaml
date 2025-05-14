@@ -1,0 +1,40 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tedi.Views.WINdownView"
+             BackgroundColor="#001f3f">
+
+    <VerticalStackLayout Padding="40" Spacing="30"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        <Label Text="Choose an option"
+               TextColor="White"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Button Text="Continue"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                Clicked="OnContinueClicked"
+                WidthRequest="300"
+                HeightRequest="60"/>
+
+        <Button Text="Troubleshoot"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                Clicked="OnTroubleshootClicked"
+                WidthRequest="300"
+                HeightRequest="60"/>
+
+        <Button Text="Turn off your PC"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                Clicked="OnPowerOffClicked"
+                WidthRequest="300"
+                HeightRequest="60"/>
+    </VerticalStackLayout>
+</ContentView>
