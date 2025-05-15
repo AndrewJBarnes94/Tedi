@@ -14,6 +14,6 @@ public partial class TroubleshootView : ContentView
 
     private async void OnAdvancedClicked(object sender, EventArgs e)
     {
-        await Application.Current.MainPage.DisplayAlert("Advanced options", "Next view coming soon!", "OK");
+        this.Content = new AdvancedOptionsView();
     }
 }

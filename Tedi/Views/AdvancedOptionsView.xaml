@@ -1,0 +1,48 @@
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tedi.Views.AdvancedOptionsView"
+             BackgroundColor="#001f3f">
+
+    <VerticalStackLayout Padding="40" Spacing="30"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+
+        <Label Text="Advanced options"
+               TextColor="White"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <Button Text="Startup Repair"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="300"
+                HeightRequest="60"
+                Clicked="OnStartupRepairClicked"/>
+
+        <Button Text="Startup Settings"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="300"
+                HeightRequest="60"
+                Clicked="OnStartupSettingsClicked"/>
+
+        <Button Text="Command Prompt"
+                BackgroundColor="#0078D7"
+                TextColor="White"
+                FontSize="18"
+                WidthRequest="300"
+                HeightRequest="60"
+                Clicked="OnCommandPromptClicked"/>
+
+        <Button Text="Back"
+                BackgroundColor="Gray"
+                TextColor="White"
+                FontSize="16"
+                WidthRequest="150"
+                HeightRequest="50"
+                Clicked="OnBackClicked"/>
+    </VerticalStackLayout>
+</ContentView>

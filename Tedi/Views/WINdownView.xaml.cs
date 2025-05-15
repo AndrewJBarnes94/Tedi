@@ -13,10 +13,9 @@ public partial class WINdownView : ContentView
     }
 
     private void OnTroubleshootClicked(object sender, EventArgs e)
-{
-    // Replace this view's content with TroubleshootView
-    this.Content = new TroubleshootView();
-}
+    {
+        this.Content = new TroubleshootView();
+    }
 
 
     private async void OnPowerOffClicked(object sender, EventArgs e)
